@@ -8,6 +8,6 @@ import com.domain.User;
 public interface IupdateService {
 
 	/* Update a record */
-	public void updateUser(User user);
+	public User updateUser(User user);
 
 }

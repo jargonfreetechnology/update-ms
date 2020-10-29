@@ -16,10 +16,10 @@ public class UpdateServiceImpl implements IupdateService {
 
 	/* Update a record */
 	@Override
-	public void updateUser(User user) {
-		userDaoImpl.save(user);
-
+	public User updateUser(User user) {
+		user = userDaoImpl.save(user);
 		System.out.println("Record updated!!!");
+		return user;
 	}
 
 	@Override
